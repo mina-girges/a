@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <!--===== Meta Element =====-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="في الساعة التاسعة نادى ربنا يسوع بصوت عظيم «يا أبتاه في يديك أستودع روحي» وأسلم الروح فانشق حجاب الهيكل من وسطه. وأنارت الشمس التي أظلمت في الساعة السادسة. وفي هذه الساعة نتذكر اللص الذي سأل أن يذكره المخلص في ملكوته فأعطاه سؤله">
+    <!--===== Name Website =====-->
+    <title> الكتاب المقدس</title>
+    <!--===== Icon Website =====-->
+    <link rel="icon" href="../../assets/img/icon/bible.png">
+    <!--===== Link File Css =====-->
+    <link rel="stylesheet" href="../../assets/css/main.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/form.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/transitions.css" type="text/css">
+    <link rel="stylesheet" href="../../assets/css/fontawesome.css" type="text/css">
+    <!--===== js file link =====-->
+    <script src="https://kit.fontawesome.com/97772c25a1.js" crossorigin="anonymous"></script>
+    <script src="../../assets/js/main-script.js" defer></script>
+</head>
+
+<body>
+    <!--==========================
+        Style 
+    =============================-->
+    <style>
+        .bible_text {
+            margin-top: 15rem;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .bible_text h2 {
+            text-align: center;
+            color: #0707b1;
+            font-family: 'Cairo', sans-serif;
+            font-size: 45px;
+        }
+
+        .bible_text p {
+            text-align: center;
+            color: #000;
+            font-family: 'Cairo', sans-serif;
+            font-size: 18px;
+        }
+
+        .bible_text h3 {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 25px;
+            font-family: 'Vazirmatn', sans-serif;
+        }
+
+        .bible_text h3 a {
+            color: #0707b1;
+        }
+
+        .bible_text h3 a:hover {
+            color: #ff0000;
+
+        }
+
+        @media (max-width: 370px) {
+            .bible_text h3 {
+                font-size: 18px;
+            }
+
+            #saa-9 p {
+                font-size: 20px;
+            }
+        }
+
+        .bible_img {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .bible_img img {
+            box-shadow: 5px 4px 18px 0px rgba(0, 0, 0, 0.9);
+            border: 2px solid #000;
+            border-radius: 50px;
+            margin-top: 8rem;
+        }
+
+        .bible {
+            position: relative;
+            background: rgb(17, 99, 255);
+            color: #fff;
+            text-align: center;
+            margin-top: 5rem;
+            border-radius: 10px;
+            width: 50%;
+            height: 70px;
+            padding-top: 10px;
+            font-size: 22px;
+            display: inline-block;
+            transform: translate(50%, 0);
+            font-family: 'Cairo', sans-serif;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.9);
+            cursor: pointer;
+            transition: all 1.5s;
+        }
+
+        .bible a {
+            color: #fff;
+        }
+
+        .bible_tooltip {
+            position: absolute;
+            top: 0;
+            font-size: 14px;
+            background: #ffffff;
+            color: #ffffff;
+            padding: 5px 8px;
+            border-radius: 5px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .bible_tooltip::before {
+            position: absolute;
+            content: "";
+            height: 8px;
+            width: 8px;
+            background: #ffffff;
+            bottom: -3px;
+            left: 50%;
+            transform: translate(-50%) rotate(45deg);
+            transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .bible:hover .bible_tooltip {
+            top: -45px;
+            opacity: 1;
+            visibility: visible;
+            pointer-events: auto;
+        }
+
+        svg:hover span,
+        svg:hover .bible_tooltip {
+            text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+        }
+
+        .bible:hover {
+            color: #fff;
+            box-shadow: 0 10px 10px rgba(17, 99, 254, 1);
+        }
+
+        .bible:hover .bible_tooltip,
+        .bible:hover .bible_tooltip::before {
+            background: linear-gradient(320deg, rgb(3, 77, 146), rgb(0, 60, 255));
+            color: #ffffff;
+        }
+    </style>
+    <!--==========================
+        Header SECTION
+    =============================-->
+    <header class="header">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a data-aos="zoom-in-left" data-aos-delay="150" href="#" class="logo">
+            <img src="../../assets/img/logo.png" alt="Ava Musa" />
+        </a>
+        <nav class="navbar">
+            <a data-aos="zoom-in-left" data-aos-delay="300" href="../../index.html">الصفحة الرئيسية</a>
+            <a data-aos="zoom-in-left" data-aos-delay="450" href="#">الكتاب المقدس</a>
+            <a data-aos="zoom-in-left" data-aos-delay="600" href="../Agpeya/agpeya.html">الاجبية</a>
+            <a data-aos="zoom-in-left" data-aos-delay="750" href="../Characters/characters.html">سير القدسين</a>
+            <a data-aos="zoom-in-left" data-aos-delay="900" href="../Media/media.html">الميديا</a>
+            <a data-aos="zoom-in-left" data-aos-delay="1150" href="../Kides/kides.html">خدمة الاطفال</a>
+        </nav>
+        <a data-aos="zoom-in-left" data-aos-delay="1300" href="#" class="btn"></a>
+    </header>
+    <!--==========================
+        Bible SECTION
+    =============================-->
+    <div data-aos="fade-up" data-aos-delay="300" class="bible_text">
+        <h2>الـكـتـاب الـمـقـدس</h2>
+        <p>أساس المسيحية الارثوذكسية القبطية</p>
+        <h3 dir="rtl">
+            الاصدارات : ( <a href="">العربية</a> ) - ( <a href="">الانجليزية</a> )
+        </h3>
+    </div>
+    <div data-aos="fade-up" data-aos-delay="300" class="bible_img">
+        <img src="modes/img_bible.jpg" alt="">
+    </div>
+
+    <div data-aos="zoom-in-left" data-aos-delay="450" class="bible_scr">
+        <a href="new_bible/source.html">
+            <div class="bible">
+                <span class="bible_tooltip">27 سفر 260 / أصحاح</span>
+                <span>
+                    العهد الجديد
+                </span>
+            </div>
+        </a>
+        <br>
+        <a href="old_bible/source.html">
+            <div class="bible">
+                <span class="bible_tooltip">39 سفر 929 / أصحاح</span>
+                <span>
+                    العهد القديم
+                </span>
+            </div>
+        </a>
+    </div>
+    <!--==========================
+        Footer SECTION
+    =============================-->
+    <footer id="footer">
+        <div class="box-container">
+            <div class="box" data-aos="fade-up" data-aos-delay="150">
+                <a href="#"><img src="../../assets/img/logo.png" alt="Ava Musa" /></a>
+                <p class="title">
+                    تَوَكَّلْ عَلَى الرَّبِّ بِكُلِّ قَلْبِكَ، وَعَلَى فَهْمِكَ لاَ
+                    تَعْتَمِدْ
+                </p>
+                <div class="share">
+                    <a target="_blank" href="https://facebook.com/Ava.MusaBl"><img
+                            src="../../assets/img/icon/facebook.png" alt="facebook" />Facebook</a>
+                    <a target="_blank" href="https://instagram.com/ava_musabl"><img
+                            src="../../assets/img/icon/instagram.png" alt="instagram" />Instagram</a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCXU8VWz8bMrH_TamfkjBY0g"><img
+                            src="../../assets/img/icon/youtube.png" alt="youtube" />Youtube</a>
+                </div>
+            </div>
+
+            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
+                <h3>الوصول السريع</h3>
+                <a href="../../index.html"><i class="far fa-arrow-alt-circle-right"></i> الصفحة الرئسية</a>
+                <a href="#"><i class="far fa-arrow-alt-circle-right"></i> الكتاب المقدس</a>
+                <a href="../Agpeya/agpeya.html"><i class="far fa-arrow-alt-circle-right"></i> اﻷجبية</a>
+                <a href="../characters/characters.html"><i class="far fa-arrow-alt-circle-right"></i> سير القدسين</a>
+                <a href="../Media/media.html"><i class="far fa-arrow-alt-circle-right"></i> الميديا</a>
+                <a href="../kides/kides.html"><i class="far fa-arrow-alt-circle-right"></i> اﻷطفال</a>
+            </div>
+
+            <div class="box fast-link" data-aos="fade-up" data-aos-delay="300">
+                <h3>الخدمة</h3>
+                <a href="../service/about.html"><i class="far fa-arrow-alt-circle-right"></i> حول</a>
+                <a href="../service/work.html"><i class="far fa-arrow-alt-circle-right"></i> وظائف</a>
+                <a href="../service/help.html"><i class="far fa-arrow-alt-circle-right"></i> مساعدة</a>
+                <a href="../service/donation.html"><i class="far fa-arrow-alt-circle-right"></i> تبرع</a>
+                <a href="../service/volunteer.html"><i class="far fa-arrow-alt-circle-right"></i> التطوع</a>
+                <a href="../service/blog.html"><i class="far fa-arrow-alt-circle-right"></i> مدونة</a>
+            </div>
+
+            <div class="box" data-aos="fade-up" data-aos-delay="600">
+                <h3 class="notices">الابلاغ عن الاعطال و المحتوي الخاطىء</h3>
+                <form action="https://formspree.io/f/mpzeogwv" method="POST">
+                    <input type="text" autocomplete="on" name="text" class="input" placeholder="الاسم">
+                    <input type="text" autocomplete="on" name="email" class="input" placeholder="البريد الاكتروني">
+                    <textarea type="text" autocomplete="off" name="comment" class="input"
+                        placeholder="وصف المشكلة"></textarea>
+                    <input type="file" accept=".jpg, .jpeg, .png" name="file" class="input"
+                        placeholder="ارسل صورة للمشكلة">
+                    <button class="sub-but">
+                        <div type="submit">
+                            <div class="svg-wrapper">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path fill="currentColor"
+                                        d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                        <span>Send</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <div class="rights">
+            <p>تصميم و تنفيذ فريق <span>اﻷنبا موسي الاسود</span></p>
+        </div>
+    </footer>
+    <!--========================== 
+        Mix Screen (300px)
+    =============================-->
+    <article data-aos="fade-up" data-aos-delay="150" dir="rtl" id="screen-max">
+        <img src="../../../assets/img/logo.png">
+        <p> لدي موقع الانبا موسي الكثير لتقديمه بحيث نطلب منك توجيه جهازك إلى الوضع الرأسي أو العثور علي شاشة أكبر.
+            لكي
+            تستمتع بتجربة مميزة.</p>
+    </article>
+    <!--==========================
+        Script SECTION
+    =============================-->
+    <script src="../../assets/js/transitions.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            offset: 150,
+        });
+    </script>
+</body>
+
+</html>
